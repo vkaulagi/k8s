@@ -1,17 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: books
+  name: books-deploy
   namespace: book-store-ns
+  labels:
+    serviceName: books
 spec:
   selector:
     matchLabels:
-      run: books
+      serviceName: books
   replicas: 1
   template:
     metadata:
       labels:
-        run: books
+        serviceName: books
     spec:
       containers:
       - name: books-container
