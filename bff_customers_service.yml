@@ -10,6 +10,7 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 80
+  type: LoadBalancer
   selector:
     run: bff-customers
-    type: LoadBalancer
+    # type: LoadBalancer
