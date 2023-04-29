@@ -11,7 +11,7 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 8080
-  type: LoadBalancer
   selector:
     run: bff-books
     # type: LoadBalancer
+  type: LoadBalancer
