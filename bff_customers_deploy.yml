@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bff_customers
+  name: bff-customers
   namespace: book-store-ns
 spec:
   selector:
     matchLabels:
-      run: bff_customers
+      run: bff-customers
   replicas: 1
   template:
     metadata:
       labels:
-        run: bff_customers
+        run: bff-customers
     spec:
       containers:
       - name: bff-customers-container
