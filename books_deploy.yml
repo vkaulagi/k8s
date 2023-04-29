@@ -14,7 +14,7 @@ spec:
         run: books
     spec:
       containers:
-      - name: books_container
+      - name: books-container
         image: vkaulagi/books
         ports:
         - containerPort: 3000

@@ -14,7 +14,7 @@ spec:
         run: bff_books
     spec:
       containers:
-      - name: bff_books_container
+      - name: bff-books-container
         image: vkaulagi/bff_books
         ports:
         - containerPort: 80

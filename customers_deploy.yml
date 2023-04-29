@@ -14,7 +14,7 @@ spec:
         run: customers
     spec:
       containers:
-      - name: customers_container
+      - name: customers-container
         image: vkaulagi/customers
         ports:
         - containerPort: 3000

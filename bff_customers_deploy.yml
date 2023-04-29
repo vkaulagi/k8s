@@ -14,7 +14,7 @@ spec:
         run: bff_customers
     spec:
       containers:
-      - name: bff_customers_container
+      - name: bff-customers-container
         image: vkaulagi/bff_customers
         ports:
         - containerPort: 80
