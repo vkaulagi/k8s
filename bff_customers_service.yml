@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bff-customers
+  name: bff-customers-service
   namespace: book-store-ns
-  labels:
-    run: bff-customers
+  # labels:
+  #   run: bff-customers
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 8080
   selector:
-    run: bff-customers
+    serviceName: bff-customers
     # type: LoadBalancer
   type: LoadBalancer
