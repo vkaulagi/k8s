@@ -20,8 +20,8 @@ spec:
         image: vkaulagi/crm
         ports:
         - containerPort: 3000
-          initialDelaySeconds: 30
-          periodSeconds: 10
+          # initialDelaySeconds: 30
+          # periodSeconds: 10
           # timeoutSeconds: 5
-          successThreshold: 1
-          failureThreshold: 3
+          # successThreshold: 1
+          # failureThreshold: 3
