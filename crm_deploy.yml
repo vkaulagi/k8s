@@ -20,11 +20,6 @@ spec:
         image: vkaulagi/crm
         ports:
         - containerPort: 3000
-        livenessProbe:
-          httpGet:
-            path: /status
-            port: 3000
-            scheme: HTTP
           initialDelaySeconds: 30
           periodSeconds: 10
           timeoutSeconds: 5
