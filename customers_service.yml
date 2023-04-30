@@ -9,7 +9,7 @@ spec:
   ports:
   - port: 3000
     protocol: TCP
-    targetPort: 8000
+    targetPort: 3000
   selector:
     serviceName: customers
     # type: LoadBalancer
